@@ -1,0 +1,87 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.ticket {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.carrier {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.ticket-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.time-location {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.time {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.stops {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  margin-top: 1rem;
+  background-color: #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

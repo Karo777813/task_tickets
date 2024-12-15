@@ -1,0 +1,41 @@
+/* App.css */
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ticket {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+  transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.filters label:hover {
+  color: #007bff;
+}

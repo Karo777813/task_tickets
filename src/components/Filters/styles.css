@@ -1,0 +1,80 @@
+.filters {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+.filters-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.filters-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filters-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.filters-option:hover {
+  background-color: #f7f7f7;
+}
+
+.filters-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filters-label {
+  font-size: 1rem;
+  color: #555;
+  user-select: none;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.filters-currency-button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: normal;
+  background-color: white;
+  color: rgb(103, 197, 228);
+  border: 1px solid rgb(103, 197, 228);
+}
+
+.filters-currency-options {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.is-Active-Currency-button {
+  font-weight: bold;
+  background-color: rgb(103, 197, 228);
+  color: white;
+}
